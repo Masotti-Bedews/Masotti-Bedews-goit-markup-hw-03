@@ -9,7 +9,7 @@
     --footer-text-color:rgba(255, 255, 255, 0.6);
     --secondary-button-colar:#188CE8;
     --logo-dark-color:#000000;
-    --border-color:#ECECEC;
+    --border-color:#EEEEEE;
 }
 
 
@@ -132,37 +132,46 @@ header {
 .hero {
      background-color: var( --primary-text-color);
       text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
-.container .hero-tittle {
-    padding-top: 200px;
-    margin-bottom: 30px;
-}
- 
+
 
 .hero-tittle {
     color:var(--white-color);
     font-weight: 900;
         font-size: 44px;
-        line-height: 1.4;text-align: center;
+        line-height: 1.4;
+        /* text-align: center; */
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        padding-top: 200px;
-        padding-right: 216px;
-        padding-left: 216px ;
+        width: 730px;
         padding-bottom: 0;
+        margin: 0 auto;
         margin-bottom: 14px;
 }
 
 .hero .button {
-    margin-bottom: 200px;
+    
     padding: 10px 32px;
     width: 216px;
     border: var(--accent-color);
     border-radius: 4px;
-   
+
+    background-color: var(--accent-color);
+        border: 0;
+        border-color: var(--accent-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.8; }
+ 
+        .hero .button:hover,
+    .hero .button:focus {
+        background-color: var(--secondary-button-colar);
+    }
     
- }
+
 /* section */
 
 
@@ -178,15 +187,14 @@ header {
 .section-special {
     background:var(--white-color);
 }
-
-.section-features .page-context {
-    padding-top: 94px;
+.section-features{
+     padding-top: 94px;
     padding-bottom: 94px;
 }
 
+
 .features {
     display: flex;
-   justify-content: space-between;
 }
 
 .features .list:not(:last-child){
@@ -213,11 +221,16 @@ header {
         text-align: center;
         margin-bottom: 50px;
 }
+
+.section-special {
+    padding-bottom: 94px;
+}
+
 .section-special .list {
     display: flex;
-    padding-bottom: 94px;
+    
     gap: 30px;
-    justify-content: space-between;
+    
 }
  
 
@@ -225,13 +238,10 @@ header {
     color: var(--tittle-text-color);
     font-weight: 700;
         font-size: 36px;
-        line-height: 1.17px;
+        line-height: 1.17;
         text-align: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
-}
-.page .list {
-    padding-bottom: 94px;
+    
+    margin-bottom: 50px;
 }
 
 .team-name {
@@ -244,7 +254,10 @@ header {
 }
 
 .team {
-    background-color:var(--secondary-bg-color);
+    background-color:var(--secondary-bg-color); 
+    /* padding: 30px 0; */
+    padding-top: 94px;
+    padding-bottom: 90px;
 }
 .team-item {
     width: calc((100% - 60)/4);
@@ -256,7 +269,7 @@ header {
 }
 
 .team-box {
-    padding: 30px 0;
+   
     background-color: var(--white-color);
 }
 .team-name {
@@ -283,8 +296,13 @@ footer {
     padding-bottom: 60px;
 } */
 
-.footer-items {
+address {
     font-style: normal;
+    
+}
+
+.footer-items {
+    
     margin-top: 20px;
 }
 
@@ -303,7 +321,7 @@ footer {
 }
 
 .footer-items .link {
-    color: var(--white-color);
+    color: #FFFFFF99;
     font-size: 14px;
         line-height: 1.71;
 }
@@ -318,17 +336,9 @@ footer {
     font-family: inherit;
     color:var(--white-color);
     cursor: pointer;
-    background-color: var(--accent-color);
-    /* border-color: var(--accent-color); */
-    font-weight: 500;
-        font-size: 16px;
-        line-height: 1.8;
-      
+   
 }
-.hero .button:hover ,
-.hero .button:focus {
-    background-color:var(--secondary-button-colar);
-}
+
 
 
 /* _________________________portfolio__________________________________*/
@@ -339,11 +349,15 @@ main {
     background-color: var(--white-color);
 }
 
+.holder {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
  .holder .button-portfolio {
     font-family: inherit;
     color: var(--tittle-text-color);
     background-color:var(--secondary-bg-color);
-    border-color:var(--secondary-bg-color);
+    border: 0;
     border-radius: 4px;
     font-weight: 500;
         font-size: 16px;
@@ -359,8 +373,7 @@ main {
  
 .btn-list {
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 34px;
+   margin-bottom: 50px;
     justify-content: center;
     gap: 8px;
 }
@@ -370,30 +383,29 @@ main {
 .box-list {
     display: flex;
     flex-wrap: wrap;
-    font-weight: 500;
-        font-size: 16px;
-        line-height: 1.62;
-    column-gap: 30px;
+    gap: 30px;
 }
 
 .assortment-box{
-    border: 1px;
-    border-color: #000000;
+    border: 1px solid var(--border-color);
+    border-top: 0;
+    padding: 20px 24px;
+    
 
 }
 .box-list .section {
-    padding-top: 20px;
+    /* padding-top: 20px;
     padding-right: 24px;
-    padding-left: 24px;
+    padding-left: 24px; */
     margin-bottom: 4px;
 }
 .under-section {
-    padding-right: 24px;
-    padding-left: 24px;
+    /* padding-right: 24px;
+    padding-left: 24px; */
     padding-bottom: 20px;
 }
 
-.box .section {
+.holder .section {
     color: var(--tittle-text-color);
     font-weight: 700;
         font-size: 18px;

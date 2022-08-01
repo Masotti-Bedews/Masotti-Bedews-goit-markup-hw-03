@@ -10,6 +10,7 @@
     --secondary-button-colar:#188CE8;
     --logo-dark-color:#000000;
     --border-color:#EEEEEE;
+        
 }
 
 
@@ -47,16 +48,18 @@ img {
 
 .studio {
     color: var(--logo-dark-color);
-    margin-right: 93px;
 }
+  
 .logo {
     color:var(--accent-color);
     text-decoration: none;
     font-family: 'Raleway', sans-serif; 
         font-weight: 700;
         font-size: 26px;
-        line-height: 1.19;
+        line-height: 1.19; 
+         margin-right: 93px;
 }
+
 /* Header */
 header {
     background-color:var(--white-color);
@@ -149,7 +152,7 @@ header {
         width: 730px;
         padding-bottom: 0;
         margin: 0 auto;
-        margin-bottom: 14px;
+        margin-bottom: 30px;
 }
 
 .hero .button {
@@ -249,7 +252,7 @@ header {
     font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
-    /* align-content: center; */
+    
     text-align: center;
 }
 
@@ -269,13 +272,17 @@ header {
 }
 
 .team-box {
-   
+   padding-bottom: 30px; 
+   padding-top: 30px;
     background-color: var(--white-color);
 }
 .team-name {
     margin-bottom: 10px;
+   
+  
 }
 .team .team-profession {
+    
     color: var(--general-text-color);
     text-align: center;
         line-height: 1.19;
@@ -291,23 +298,20 @@ footer {
     color: var(--white-color);
 }
 
-/* .footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-} */
 
 address {
     font-style: normal;
+    padding-top: 20px;
     
 }
 
-.footer-items {
+/* .footer-items {
     
     margin-top: 20px;
-}
+} */
 
-.footer-items .list {
-    gap:9px;
+.footer-items .list:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer-items .link:hover ,
@@ -315,21 +319,26 @@ address {
     color: var(--accent-color);
 }
 
-.footer-items .link it:hover,
-.footer-items .link it:focus {
+.footer-items .link-nav:hover,
+.footer-items .link-nav:focus {
     color: var(--accent-color);
 }
 
-.footer-items .link {
-    color: #FFFFFF99;
+.footer-items .link-nav {
+    color: var(--white-color);
     font-size: 14px;
         line-height: 1.71;
+        text-decoration: none;
 }
-.footer-items .link it {
+
+.footer-items .link  {
     color: var(--footer-text-color);
     font-size: 14px;
         line-height: 1.71;
 }
+
+
+
 
 /* button */
 .button {
@@ -389,19 +398,18 @@ main {
 .assortment-box{
     border: 1px solid var(--border-color);
     border-top: 0;
-    padding: 20px 24px;
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
     
 
 }
 .box-list .section {
-    /* padding-top: 20px;
-    padding-right: 24px;
-    padding-left: 24px; */
+
     margin-bottom: 4px;
 }
 .under-section {
-    /* padding-right: 24px;
-    padding-left: 24px; */
+
     padding-bottom: 20px;
 }
 
